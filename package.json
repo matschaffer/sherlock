@@ -1,0 +1,22 @@
+{
+  "name": "sherlock",
+  "version": "0.0.1",
+  "description": "QA manager",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies" : {
+   "restify" : "lastest",
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leoGalani/sherlock.git"
+  },
+  "author": "Leonardo Galani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leoGalani/sherlock/issues"
+  },
+  "homepage": "https://github.com/leoGalani/sherlock"
+}
