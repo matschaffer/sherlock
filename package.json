@@ -1,13 +1,21 @@
 {
   "name": "sherlock",
   "version": "0.0.1",
-  "description": "QA manager",
+  "description": "Sherlock",
   "main": "index.js",
+  "dependencies": {
+    "client-sessions": "^0.7.0",
+    "passport": "^0.2.1",
+    "passport-local": "^1.0.0",
+    "password-hash": "^1.2.2",
+    "restify": "^2.8.3",
+    "restify-mongoose": "^0.2.2"
+  },
+  "devDependencies": {
+    "restify": "^2.8.3"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "dependencies" : {
-   "restify" : "lastest",
   },
   "repository": {
     "type": "git",

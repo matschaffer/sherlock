@@ -8,7 +8,7 @@ var sessions = require("client-sessions");
 
 var server = restify.createServer({
 	name: 'api.sherlock.v1',
-	version: '0.1.0'
+	version: '0.0.1'
 });
 
 //######
