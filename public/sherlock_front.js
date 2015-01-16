@@ -1,0 +1,1 @@
+Sherlock = Ember.Application.create();
