@@ -1,0 +1,67 @@
+<div class="row row-centered box-center">
+<div class="col-md-5 col-centered">
+{{#if loginModal}}
+  <div class="panel panel-primary">
+    <div class="panel-body">
+      <h4><strong>Sign in</strong></h4>
+      <br>
+      <form class="" action="" role="form">
+      <div class="form-group">
+        <div class="input-group input-icon">
+        <span class="input-group-addon">
+          <em class="fa fa-envelope fa-fw"></em>
+        </span>
+          <input type="email" name="email" class="form-control" placeholder="Email">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="input-group input-icon">
+          <span class="input-group-addon">
+            <em class="fa fa-key fa-fw"></em>
+          </span>
+          <input type="password" name="password" class="form-control" placeholder="Password">
+        </div>
+      </div>
+      <input type="submit" value="Sign in" class="btn btn-primary pull-right">
+      <div class="checkbox pui-init checked">
+        <label><input type="checkbox" name="" checked=""> Remember me<span class="ctrl-overlay fa fa-check"></span></label>
+      </div>
+      </form>
+    </div>
+                  
+    <div class="panel-footer">
+      <div class="row">
+        <a href="#" {{action 'showRequestRegister'}}> <div class="col-md-6 text-center">
+              <strong>Register</strong>
+         </div></a>
+         <a href="#"><div class="col-md-6 text-center">
+             <strong>Forgot your password?</strong>
+         </div></a>
+      </div>
+    </div>
+</div>
+      {{else}}
+
+  <div class="panel panel-primary">
+    <div class="panel-body">
+      <h4><strong>Ask the admin a login!</strong></h4>
+      <br>
+      <form class="" action="" role="form">
+      <div class="form-group">
+        <div class="input-group input-icon">
+        <span class="input-group-addon">
+          <em class="fa fa-envelope fa-fw"></em>
+        </span>
+          <input type="email" name="email" class="form-control" placeholder="Email">
+        </div>
+      </div>
+      <input type="submit" value="Request" class="btn btn-primary pull-right">
+      <button class="btn btn-primary pull-left"{{action 'showLoginModal'}}> Back </button>
+
+      </form>
+    </div>
+      </div>
+    </div>
+</div>
+{{/if}}
+

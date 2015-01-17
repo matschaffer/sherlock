@@ -4,9 +4,20 @@
 <head>
   <title>Sherlock Test Manager</title>
 
-  <link rel="stylesheet" href="static/bootstrap.css">
+  <link rel="stylesheet" href="static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/plan.min.css">
+  <link rel="stylesheet" href="static/css/video-js.min.css">
+  <link rel="stylesheet" href="static/css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="static/css/custom.css">
+
 
   <script src="static/libs/jquery.js"></script>
+  <script src="static/libs/bootstrap.min.js"></script>
+  
+
+  <script src="static/libs/bootstrap-fileupload.min.js"></script>
+  <script src="static/libs/bootstrap-select.min.js"></script>
+
   <script src="static/libs/handlebars.js"></script>
   <script src="static/libs/ember.js"></script>
   <script src="static/libs/ember-handlebars-loader.js"></script>
@@ -15,13 +26,18 @@
   <script src="sherlock_front.js"></script>
   <script src="router.js"></script>
 
+  <!--Controllers-->
+  <script src="controllers/login.js"></script>  
 </head>
 
 <body>
 
 <script>
-	EmberHandlebarsLoader.loadTempletes([login]);
+  EmberHandlebarsLoader.loadTemplates(['login','application']);
 </script>
+
+<script src="static/libs/plan.ui.js"></script>
+<script src="static/libs/custom.js"></script>
 
 </body>
 </html>
