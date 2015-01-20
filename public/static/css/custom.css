@@ -1,7 +1,8 @@
-/* centered columns styles */
+/* COMMON AREAS */
 
 html, body, .container{
     height: 100%;
+    font-family: 'Ubuntu', sans-serif !important;
 }
 
 .row-centered {
@@ -20,4 +21,17 @@ html, body, .container{
 	display: table-cell;
    text-align: center;
    vertical-align: middle;
+   margin: auto;
+}
+
+  .heading {
+    background: #244C66;
+    color: #fff;
+    text-align: center;
+    font-weight: 400 !important;
+    padding: 1.0em;
+  }
+
+.navbar {
+ border-radius: 0px !important;
 }

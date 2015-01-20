@@ -1,0 +1,19 @@
+<h1> hi! welcome you are on the dash board! </h1>
+
+<div class="row">
+	<div class="left">
+		<h2> Current Projects assigned for you:</h2>
+		<ul>
+		 {{#each project in model}}
+		    <li>{{project.projectName}}</li>
+		    <!--<li>{{#link-to project project}} {{project.projectName}} {{/link-to}}</li>-->
+		  {{/each}}
+		</ul>
+	</div>
+	<div class="left">
+		<h2> Your Todo List</h2>
+		<ul>
+		 	Some dummy data!
+		</ul>
+	</div>
+</div>

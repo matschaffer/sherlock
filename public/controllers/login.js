@@ -1,7 +1,7 @@
 Sherlock.LoginController = Ember.Controller.extend({
 loginModal: true,
 actions: {
-	showRequestRegister: function() {
+	showForgotPasswordForm: function() {
 		this.set('loginModal', false)
 	},
 	showLoginModal: function(){

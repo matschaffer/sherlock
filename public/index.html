@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="static/css/video-js.min.css">
   <link rel="stylesheet" href="static/css/bootstrap-select.min.css">
   <link rel="stylesheet" href="static/css/custom.css">
-
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
 
   <script src="static/libs/jquery.js"></script>
   <script src="static/libs/bootstrap.min.js"></script>
@@ -21,23 +21,35 @@
   <script src="static/libs/handlebars.js"></script>
   <script src="static/libs/ember.js"></script>
   <script src="static/libs/ember-handlebars-loader.js"></script>
+  <script src="http://builds.emberjs.com/beta/ember-data.min.js"></script>
 
   <!--EMBER Filers-->
   <script src="sherlock_front.js"></script>
   <script src="router.js"></script>
 
+  <!--EMBER Routers-->
+  <script src="routers/project.js"></script>
+
   <!--Controllers-->
   <script src="controllers/login.js"></script>  
+
+  <!--EMBER Models-->
+  <script src="models/project.js"></script>
+  <script src="models/user.js"></script>  
+
+
+  <script src="junkdata.js"></script>
 </head>
 
 <body>
 
 <script>
-  EmberHandlebarsLoader.loadTemplates(['login','application']);
+  EmberHandlebarsLoader.loadTemplates(['login','application','dashboard','project']);
 </script>
 
 <script src="static/libs/plan.ui.js"></script>
 <script src="static/libs/custom.js"></script>
+
 
 </body>
 </html>
