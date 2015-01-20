@@ -7,8 +7,15 @@
 
 		{{porra}}
 		 {{#each project in model}}
-		    <li>{{project.projectName}}</li>
-		    <!--<li>{{#link-to project project}} {{project.projectName}} {{/link-to}}</li>-->
+		    <li>
+		    {{project.projectName}}
+		    cenarios
+		    <ul>
+		    	{{#each cenario in project.cenarios}}
+		    		{{cenario.cenarioTitle}}
+		    	{{/each}}
+		    </ul>
+		    </li>
 		  {{/each}}
 		</ul>
 	</div>
